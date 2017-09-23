@@ -19,8 +19,8 @@ public class UserInfoController {
         return userInfoRepository.findAll();
     }
 
-    @RequestMapping(value = "/users{id}",method = RequestMethod.GET)
-    public UserInfo getUserInfo(@RequestParam int id){
+    @RequestMapping(value = "/users/{id}",method = RequestMethod.GET)
+    public UserInfo getUserInfo(@PathVariable int id){
         return userInfoRepository.findOne(id);
     }
 
