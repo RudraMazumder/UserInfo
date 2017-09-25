@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: UserInfo-1.0-SNAPSHOT.jar
+  - source: ./target
     destination: /tmp
 
 hooks:
