@@ -10,5 +10,4 @@ artifacts:
   files:
     - target/UserInfo-1.0-SNAPSHOT.jar
     - appspec.yml
-    - Scripts/AppStart.sh
   discard-paths: yes
