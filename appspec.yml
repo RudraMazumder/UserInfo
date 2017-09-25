@@ -3,8 +3,11 @@ os: linux
 files:
   - source: UserInfo-1.0-SNAPSHOT.jar
     destination: /tmp
+  - source: AppStart.sh
+    destination: /tmp
+
 
 hooks:
   AfterInstall:
-    - location: Scripts/AppStart.sh
+    - location: /tmp/AppStart.sh
       timeout: 180
