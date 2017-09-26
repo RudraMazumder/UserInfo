@@ -27,7 +27,7 @@ public class UserInfoController {
     @RequestMapping(value = "/users", method = RequestMethod.POST)
     public void addUser(@RequestParam String name,@RequestParam String email){
         UserInfo user=new UserInfo();
-        user.setName(name);
+        user.setName("Hello"+ name);
         user.setEmailId(email);
         userInfoRepository.save(user);
 
